@@ -2,7 +2,7 @@ console.log('repeater script has loaded');
 
 // write this function!
 function repeater(userPhrase, userNum) {
-  userPhrase = userPhrase + " ";
+  userPhrase = userPhrase + "\n";
   return userPhrase.repeat(userNum);
 }
 
