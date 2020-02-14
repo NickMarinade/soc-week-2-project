@@ -1,7 +1,8 @@
 console.log('devowel script has loaded');
 
 // write this function!
-function devowel() {
+function devowel(input) {
+  return input.replace(/[aeiouAEIOU]/g, ""); // First solution i found on google, btw thought that y is a vowel, lol
 }
 
 // remove all vowels, lower and upper case!
