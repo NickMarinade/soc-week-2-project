@@ -2,6 +2,16 @@ console.log('padLefts script has loaded');
 
 // write this function!
 function padLeft(string, length) {
+  if (string.length >= length ) {
+    return string;
+  } else {
+    let pad = "";
+    for (let i = 0; i < length - string.length; i++) {
+      pad = pad + "-";
+      
+    }
+    return pad + string;
+  }
 }
 
 // if the string is already as long as or longer than the length
@@ -21,14 +31,15 @@ function padLeftHandler() {
 
   const userLengthStr = prompt('what is the shortest this string should be?');
   // cast userLengthStr to a Number, and assign the value to userLength
-
+  //const userLength = Number.parseInt(userLengthStr);
+  const userLength = +userLengthStr;
   console.assert(typeof userLength === 'number', "don't forget to cast userLength to a string!");
 
   // perform core logic
-  // write this line!
+  const finalPad = padLeft(userString, userLengthStr);
 
   // alert result for the user
-  // write this line!
+  alert(finalPad);
 
   // log action for the developer
   console.log('\n--- padLeft ---');
